@@ -1,0 +1,94 @@
+
+body {
+    margin: 0;
+    font-family: Arial;
+    text-align: center;
+}
+
+header, footer {
+    background: #102B5C;
+    color: white;
+    padding: 15px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    background: lightblue;
+    padding: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: navy;
+    font-weight: bold;
+}
+
+.hero {
+    background: #2875B9;
+    color: white;
+    padding: 60px;
+}
+
+section {
+    padding: 25px;
+}
+
+.btn, button {
+    background: orange;
+    padding: 12px;
+    border: none;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+.courses {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    background: lightblue;
+    padding: 25px;
+    width: 100px;
+}
+
+table {
+    margin: auto;
+    border-collapse: collapse;
+    width: 70%;
+}
+
+td, th {
+    border: 1px solid navy;
+    padding: 12px;
+}
+
+th {
+    background: lightblue;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    margin: auto;
+}
+
+input, textarea {
+    padding: 12px;
+}
+
+@media(max-width:600px) {
+    nav, .courses {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero {
+        padding: 30px;
+    }
+}
